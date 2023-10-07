@@ -11,6 +11,14 @@ import Error  from './routes/error'
 import Nav from './routes/nav'
 import Home from './routes/homePage'
 
+import AlignContent from './routes/topics/alignContent'
+import AlignItems from './routes/topics/alignItems'
+import FlexDirection from './routes/topics/direction'
+import FlexFlow from './routes/topics/flow'
+import JustifyContent from './routes/topics/justify'
+import FlexWrap from './routes/topics/wrap'
+
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -18,9 +26,33 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        index: true,
+        path: '/',
         element: <Home />,
-      }
+      },
+      {
+        path: '/alignContent',
+        element: <AlignContent />
+      },
+      {
+        path: '/alignItems',
+        element: <AlignItems />
+      },
+      {
+        path: '/flexDirection',
+        element: <FlexDirection />
+      },
+      {
+        path: '/flexFlow',
+        element: <FlexFlow />
+      },
+      {
+        path: '/justifyContent',
+        element: <JustifyContent />
+      },
+      {
+        path: '/flexWrap',
+        element: <FlexWrap />
+      },
     ]
   }
 ])
