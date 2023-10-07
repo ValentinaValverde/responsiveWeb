@@ -1,24 +1,27 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
-import Error  from './routes/error'
 import { 
   createBrowserRouter, 
   RouterProvider ,
 } from 'react-router-dom'
+import './index.css'
+
+//routes:
+import Error  from './routes/error'
 import Nav from './routes/nav'
+import Home from './routes/homePage'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Nav />,
     errorElement: <Error />,
-    // children: [
-    //   {
-    //     path: '',
-    //     element: ,
-    //   }
-    // ]
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      }
+    ]
   }
 ])
 
