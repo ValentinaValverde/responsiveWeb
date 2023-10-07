@@ -5,11 +5,21 @@ body{
     font-family: 'Source Code Pro', monospace;
 }
 
-h1{
-    font-family: 'Silkscreen', cursive;
-    text-align: center;
-    font-size: 6rem;
-    padding: 10px;
+.title{
+    line-height: 100px;
+
+    > h1{
+        font-family: 'Silkscreen', cursive;
+        text-align: center;
+        font-size: 6rem;
+        padding: 10px;
+        max-width: 100%;
+        overflow-wrap: break-word; 
+    }
+    
+    > .responsive{
+        color: #5465ff;
+    }
 }
 
 .byVal{
@@ -28,6 +38,8 @@ h2{
     background-color: #04e824;
     color: black;
     padding: 5px;
+
+
 }
 
 .beg{
@@ -46,17 +58,19 @@ h2{
     margin-top: 100px;
     margin-bottom: 100px;
 
-    /* come back to this and ask the class how they would solve this issue :) */
     > .whatBig{
         font-size: 3rem;
-        width: 45%;
+        width: 500px;
+        max-width: 100%;
         margin: 10px;
+        overflow-wrap: break-word; 
     }
 
     > .whatSmall{
         text-align: right;
         justify-content: flex-end;
-        width: 45%;
+        width: 500px;
+        max-width: 100%;
         margin: 10px;
         font-size: 1.5rem;
         color: #5465ff;
@@ -72,41 +86,30 @@ h2{
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    /* tried to make it work but it didn't :( */
+    transition: 1s;
+    -webkit-transition: height 1s;
+
     
     > .betweenSpark{
-        font-size: 5rem;
+        font-size: 3.5rem;
         color: white;
         font-family: 'Silkscreen', cursive;
-    }
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    justify-content: space-around;
-    align-items: center;
-    height: 200px;
-    flex-wrap: wrap;
-
-    > .elOne{
-        background-color: white;
-        color: #5465ff;
-        width: 300px;
-        height: 100px;
-        padding: 10px;
-        margin: 10px;
-        text-align: center;
+        transition: 1s;
     }
 
-    > .elTwo{
-        background-color: white;
-        color: #04e824;
-        width: 300px;
-        height: 100px;
-        padding: 10px;        
-        margin: 10px;
-        text-align: center;    
+    > .betweenSpark:hover{
+        font-size: 4rem;
+        cursor: pointer;
+    }
+    > .betweenSpark:hover + .flexboxDef{
+        display: block;
+    }
+
+    .flexboxDef{
+        display: none;
+        transition: 2s;
     }
 }
 
@@ -115,19 +118,97 @@ h2{
     margin-top: 100px;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 200px;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 10px;
+
+    > .element{
+        background-color: white;
+        text-align: center;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    > .elOne{
+        color: #5465ff;
+    }
+
+    > .elTwo{
+        color: #04e824;   
+    }
+}
+
 .topics{
-    margin: 50px;
-    text-align: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin: 50px;
 
     > h2{
         font-size: 3rem;
     }
+
+    > .topicItem{
+        text-decoration: none;
+        color:#5465ff;
+        margin: 10px;
+        transition: 1s;
+    }
+
+    > .topicItem:hover{
+        font-size: 3rem;
+    }
 }
 
-.topicItem{
-    text-decoration: none;
-    color:#5465ff;
-    margin: 10px;
+
+
+
+.cheatSheet{
+    text-align: center;
+
+    > h2{
+        font-size: 3rem;
+    }
+
+    > img{
+        width: 400px;
+        max-width: 100%;
+    }
+}
+
+
+.hint{
+    background-color: #5465ff;
+    color: black;
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    > h2{
+        color: white;
+        font-size: 5rem;
+    }
+}
+
+footer{
+    background-color: #04e824;
+    color: black;
+    margin-top: 50px;
+    padding: 10px;
+    max-width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }

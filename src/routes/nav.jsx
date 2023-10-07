@@ -11,13 +11,17 @@ export default function Nav() {
             {/* for the egg icon: */}
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-
-            <div className="navBar">
+            <nav className="navBar">
                 <p>vals_web</p>
-                <span className="material-symbols-outlined">
-                    egg_alt
-                </span>
-            </div>
+                <div className="eggs">
+                    <span className="material-symbols-outlined eggAlt">
+                        egg_alt
+                    </span>
+                    {/* <span className="material-symbols-outlined egg">
+                        egg
+                    </span> */}
+                </div>
+            </nav>
 
             <Outlet />
         </>

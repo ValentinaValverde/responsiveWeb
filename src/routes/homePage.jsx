@@ -6,12 +6,12 @@ export default function Home() {
     return (
         <>
             <div className="beg">
-                <h1>Responsive
-                    <br />
-                    Web Design</h1>
+                <div className="title">
+                    <h1 className="responsive">Responsive</h1>
+                    <h1>Web Design</h1>
+                </div>
                 <p className="byVal">by: val</p>
             </div>
-
 
             <div className="whatIs">
                 <div className="whatBig">
@@ -22,24 +22,30 @@ export default function Home() {
                 </div>
             </div>
 
-
             <div className="introFlex">
                 <p>well, let me introduce you to this wonderful thing called:</p>
                 <p className="betweenSpark">flexbox</p>
+                <p className="flexboxDef">CSS Flexible Box Layout, commonly known as Flexbox, is a CSS web layout model. It is in the W3C's candidate recommendation stage. The flex layout allows responsive elements within a container to be automatically arranged depending on viewport size.</p>
             </div>
 
             {/* example of what you can do with flexbox */}
 
             <h2 className="example">example:</h2>
             <div className="container">
-                <div className="elOne">
+                <div className="elOne element">
                     <p>element 1</p>
                 </div>
-                <div className="elTwo">
+                <div className="elTwo element">
                     <p>element 2</p>
                 </div>
 
             </div>
+
+            <div className="hint">
+                <p>here's a hint:</p>
+                <h2>USE DEV TOOLS</h2>
+            </div>
+
 
             <div className="topics">
                 <h2>Topics</h2>
@@ -49,12 +55,16 @@ export default function Home() {
                 <Link className="topicItem" to="/">justify-content</Link>
                 <Link className="topicItem" to="/">align-items</Link>
                 <Link className="topicItem" to="/">align-content</Link>
-
             </div>
 
+            <div className="cheatSheet">
+                <h2>Cheat Sheet</h2>
+                <img src="https://i.redd.it/rofzm44oka091.png" alt="cheatsheet"/>
+            </div>
 
-
-
+            <footer>
+                <p>designed by vv</p>
+            </footer>
         </>
     )
 }
