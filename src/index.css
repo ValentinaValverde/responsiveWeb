@@ -31,6 +31,11 @@ h2{
     font-family: 'Pixelify Sans', cursive;
 }
 
+h3{
+    font-family: 'Pixelify Sans', cursive;
+    text-align: center;
+}
+
 .navBar{
     display: flex;
     justify-content: space-between;
@@ -228,5 +233,64 @@ footer{
     > .errorLink{
         color: #5465ff;
         font-family: 'Source Code Pro', monospace;
+    }
+}
+
+.directionMain{
+    text-align: center;
+
+    > h2{
+        font-size: 4rem;
+        max-width: 100%;
+    }
+
+    > p{
+        margin: 20px;
+    }
+}
+
+.rowContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    > .rowP{
+        background-color: #5465ff;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.columnContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > .columnP{
+        background-color: #5465ff;
+        color: white;       
+        margin: 10px;
+        padding: 10px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.nextTopic1{
+    text-align: center;
+    margin: 50px;
+
+    > .next{
+        color:#5465ff;
     }
 }
