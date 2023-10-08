@@ -411,3 +411,80 @@ footer{
 .description{
     padding: 20px;
 }
+
+.alignItemsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    > .center{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: solid 10px #04e824;
+        height: 300px;
+        width: 600px;
+        max-width: 95%;
+    }
+
+    > .flexStart{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        border: solid 10px #04e824;
+        height: 300px;
+        width: 600px;
+        max-width: 95%;
+    }
+
+    > .flexEnd{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        border: solid 10px #04e824;
+        height: 300px;
+        width: 600px;
+        max-width: 95%;
+    }
+
+    > .stretch{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        border: solid 10px #04e824;
+        height: 300px;
+        width: 600px;
+        max-width: 95%;
+    }
+
+    > .baseline{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        border: solid 10px #04e824;
+        height: 300px;
+        width: 600px;
+        max-width: 95%;
+    }
+}
+
+.pTag{
+    color: white;
+    background-color: antiquewhite;
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #5465ff;
+    text-align: center;
+}
