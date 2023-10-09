@@ -1,42 +1,42 @@
-body{
+body {
     background-color: black;
     color: #04e824;
     font-size: 20px;
     font-family: 'Source Code Pro', monospace;
 }
 
-.title{
+.title {
     line-height: 100px;
 
-    > h1{
+    >h1 {
         font-family: 'Silkscreen', cursive;
         text-align: center;
         font-size: 6rem;
         padding: 10px;
         max-width: 100%;
-        overflow-wrap: break-word; 
+        overflow-wrap: break-word;
     }
-    
-    > .responsive{
+
+    >.responsive {
         color: #5465ff;
     }
 }
 
-.byVal{
+.byVal {
     text-align: center;
     color: #5465ff;
 }
 
-h2{
+h2 {
     font-family: 'Pixelify Sans', cursive;
 }
 
-h3{
+h3 {
     font-family: 'Pixelify Sans', cursive;
     text-align: center;
 }
 
-.navBar{
+.navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,19 +45,19 @@ h3{
     padding: 5px;
 }
 
-.eggAlt{
+.eggAlt {
     text-decoration: none;
     color: black;
 }
 
 
-.beg{
+.beg {
     width: 100%;
     margin: 10px;
 }
 
 
-.whatIs{
+.whatIs {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -67,15 +67,15 @@ h3{
     margin-top: 100px;
     margin-bottom: 100px;
 
-    > .whatBig{
+    >.whatBig {
         font-size: 3rem;
         width: 500px;
         max-width: 100%;
         margin: 10px;
-        overflow-wrap: break-word; 
+        overflow-wrap: break-word;
     }
 
-    > .whatSmall{
+    >.whatSmall {
         text-align: right;
         justify-content: flex-end;
         width: 500px;
@@ -86,7 +86,7 @@ h3{
     }
 }
 
-.introFlex{
+.introFlex {
     background-color: #5465ff;
     color: black;
     text-align: center;
@@ -100,34 +100,35 @@ h3{
     transition: 1s;
     -webkit-transition: height 1s;
 
-    
-    > .betweenSpark{
+
+    >.betweenSpark {
         font-size: 3.5rem;
         color: white;
         font-family: 'Silkscreen', cursive;
         transition: 1s;
     }
 
-    > .betweenSpark:hover{
+    >.betweenSpark:hover {
         font-size: 4rem;
         cursor: pointer;
     }
-    > .betweenSpark:hover + .flexboxDef{
+
+    >.betweenSpark:hover+.flexboxDef {
         display: block;
     }
 
-    .flexboxDef{
+    .flexboxDef {
         display: none;
         transition: 2s;
     }
 }
 
-.example{
+.example {
     text-align: center;
     margin-top: 100px;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -136,7 +137,7 @@ h3{
     height: auto;
     margin: 10px;
 
-    > .element{
+    >.element {
         background-color: white;
         text-align: center;
         align-items: center;
@@ -146,33 +147,33 @@ h3{
         margin: 10px;
     }
 
-    > .elOne{
+    >.elOne {
         color: #5465ff;
     }
 
-    > .elTwo{
-        color: #04e824;   
+    >.elTwo {
+        color: #04e824;
     }
 }
 
-.topics{
+.topics {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 50px;
 
-    > h2{
+    >h2 {
         font-size: 3rem;
     }
 
-    > .topicItem{
+    >.topicItem {
         text-decoration: none;
-        color:#5465ff;
+        color: #5465ff;
         margin: 10px;
         transition: 1s;
     }
 
-    > .topicItem:hover{
+    >.topicItem:hover {
         font-size: 3rem;
     }
 }
@@ -180,21 +181,21 @@ h3{
 
 
 
-.cheatSheet{
+.cheatSheet {
     text-align: center;
 
-    > h2{
+    >h2 {
         font-size: 3rem;
     }
 
-    > img{
+    >img {
         width: 400px;
         max-width: 100%;
     }
 }
 
 
-.hint{
+.hint {
     background-color: #5465ff;
     color: black;
     text-align: center;
@@ -204,13 +205,13 @@ h3{
     align-items: center;
     flex-direction: column;
 
-    > h2{
+    >h2 {
         color: white;
         font-size: 5rem;
     }
 }
 
-footer{
+footer {
     background-color: #04e824;
     color: black;
     margin-top: 50px;
@@ -222,40 +223,40 @@ footer{
     justify-content: flex-end;
 }
 
-.errorPage{
+.errorPage {
     text-align: center;
     font-family: 'Silkscreen', cursive;
 
-    > p{
+    >p {
         font-family: 'Source Code Pro', monospace;
     }
 
-    > .errorLink{
+    >.errorLink {
         color: #5465ff;
         font-family: 'Source Code Pro', monospace;
     }
 }
 
-.directionMain{
+.directionMain {
     text-align: center;
 
-    > h2{
+    >h2 {
         font-size: 4rem;
         max-width: 100%;
     }
 
-    > p{
+    >p {
         margin: 20px;
     }
 }
 
-.rowContainer{
+.rowContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 
-    > .rowP{
+    >.rowP {
         background-color: #5465ff;
         color: white;
         margin: 10px;
@@ -268,14 +269,14 @@ footer{
     }
 }
 
-.columnContainer{
+.columnContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    > .columnP{
+    >.columnP {
         background-color: #5465ff;
-        color: white;       
+        color: white;
         margin: 10px;
         padding: 10px;
         width: 350px;
@@ -286,7 +287,7 @@ footer{
     }
 }
 
-.nextTopic1{
+.nextTopic1 {
     text-align: center;
     margin: 50px;
     display: flex;
@@ -294,20 +295,29 @@ footer{
     justify-content: space-around;
     flex-wrap: nowrap;
 
-    > .next{
-        color:#5465ff;
+    >.next {
+        color: #5465ff;
+        text-decoration: none;
+        transition: 1s;
+    }
+
+    > .next:hover{
+        font-size: 2rem;
     }
 }
 
+.example{
+    text-align: center;
+}
 
 
-.containerWrap{
+.containerWrap {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 
-    > .wrapP{
+    >.wrapP {
         background-color: #5465ff;
         color: white;
         margin: 10px;
@@ -321,13 +331,13 @@ footer{
 }
 
 
-.containerNoWrap{
+.containerNoWrap {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
 
-    > .noWrapP{
+    >.noWrapP {
         background-color: #5465ff;
         color: white;
         margin: 10px;
@@ -340,89 +350,113 @@ footer{
     }
 }
 
-.flexFlowDemo{
+.flexFlowDemo {
     background-color: #5465ff;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     max-width: 100%;
+    width: 400px;
     margin: 20px;
-    justify-content: center;
-    align-items: center;
 
-    > p{
+    >p {
         color: white;
         margin: 10px;
         padding: 10px;
-        width: 350px;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
 }
 
-.pContainer{
-
-    > .center{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    > .flexStart{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-    }
-
-    > .flexEnd{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-    }
-
-    > .spaceAround{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    > .spaceBetween{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-}
-
-.pElement{
-    background-color: #5465ff;
-    color: white;
-    margin: 10px;
-    padding: 20px;
-    width: 200px;
-
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.description{
-    padding: 20px;
-}
-
-.alignItemsContainer{
+.pContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    > .center{
+    >.center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: solid 10px #04e824;
+        height: 300px;
+        width: 600px;
+        max-width: 95%;
+    }
+
+    >.flexStart {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        border: solid 10px #04e824;
+        height: 300px;
+        width: 600px;
+        max-width: 95%;
+    }
+
+    >.flexEnd {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        border: solid 10px #04e824;
+        height: 300px;
+        width: 600px;
+        max-width: 95%;
+    }
+
+    >.spaceAround {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border: solid 10px #04e824;
+        height: 300px;
+        width: 600px;
+        max-width: 95%;
+    }
+
+    >.spaceBetween {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border: solid 10px #04e824;
+        height: 300px;
+        width: 600px;
+        max-width: 95%;
+    }
+}
+
+.pElement {
+    color: white;
+    background-color: antiquewhite;
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #5465ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    padding: 20px;
+    text-align: center;
+}
+
+.alignItemsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    >.center {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -434,7 +468,7 @@ footer{
         max-width: 95%;
     }
 
-    > .flexStart{
+    >.flexStart {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -446,7 +480,7 @@ footer{
         max-width: 95%;
     }
 
-    > .flexEnd{
+    >.flexEnd {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -458,7 +492,7 @@ footer{
         max-width: 95%;
     }
 
-    > .stretch{
+    >.stretch {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -470,7 +504,7 @@ footer{
         max-width: 95%;
     }
 
-    > .baseline{
+    >.baseline {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -483,7 +517,7 @@ footer{
     }
 }
 
-.pTag{
+.pTag {
     color: white;
     background-color: antiquewhite;
     width: 200px;
@@ -496,13 +530,13 @@ footer{
     align-items: center;
 }
 
-.alignContentContainer{
+.alignContentContainer {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 
-    > .spaceBetween{
+    >.spaceBetween {
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
@@ -513,7 +547,7 @@ footer{
         max-width: 95%;
     }
 
-    > .spaceAround{
+    >.spaceAround {
         display: flex;
         flex-wrap: wrap;
         align-content: space-around;
@@ -524,7 +558,7 @@ footer{
         max-width: 95%;
     }
 
-    > .stretch{
+    >.stretch {
         display: flex;
         flex-wrap: wrap;
         align-content: stretch;
@@ -535,7 +569,7 @@ footer{
         max-width: 95%;
     }
 
-    > .center{
+    >.center {
         display: flex;
         flex-wrap: wrap;
         align-content: center;
@@ -546,7 +580,7 @@ footer{
         max-width: 95%;
     }
 
-    > .flexStart{
+    >.flexStart {
         display: flex;
         flex-wrap: wrap;
         align-content: flex-start;
@@ -557,7 +591,7 @@ footer{
         max-width: 95%;
     }
 
-    > .flexEnd{
+    >.flexEnd {
         display: flex;
         flex-wrap: wrap;
         align-content: flex-end;
@@ -569,7 +603,38 @@ footer{
     }
 }
 
-.sub{
+.sub {
     text-align: center;
     padding: 10px;
+}
+
+.link {
+    color: #5465ff;
+}
+
+.forMore {
+    text-align: center;
+}
+
+.arrow {
+    border: solid #5465ff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+
+.tryingHard{
+    display: flex;
+    justify-content: center;
 }

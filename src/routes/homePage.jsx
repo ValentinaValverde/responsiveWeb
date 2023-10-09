@@ -61,6 +61,8 @@ export default function Home() {
                 <img src="https://i.redd.it/rofzm44oka091.png" alt="cheatsheet"/>
             </div>
 
+            <p className="forMore">for more, go to <a className="link" target="_blank" href="https://www.w3schools.com/css/css3_flexbox_container.asp#justify-content">this link</a></p>
+
             <footer>
                 <p>designed by vv</p>
             </footer>

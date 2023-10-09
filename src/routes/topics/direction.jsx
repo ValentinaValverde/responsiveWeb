@@ -35,7 +35,7 @@ export default function FlexDirection() {
                 </div>
             </div>
             <div className="nextTopic1">
-                <Link className="next" to={"/flexWrap"}>next topic</Link>
+                <Link className="next" to={"/flexWrap"}>flex-wrap <i class="arrow right"></i></Link>
             </div>
 
         </>

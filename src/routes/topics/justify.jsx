@@ -40,9 +40,9 @@ export default function JustifyContent() {
                 </div>
             </div>
 
-
             <div className="nextTopic1">
-                <Link className="next" to={"/alignItems"}>next topic</Link>
+                <Link className="next" to={"/flexFlow"}><i class="arrow left"></i>flex-flow</Link>
+                <Link className="next" to={"/alignItems"}>align-items<i class="arrow right"></i></Link>
             </div>
         </>
     )

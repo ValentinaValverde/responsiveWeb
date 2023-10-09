@@ -36,10 +36,9 @@ export default function AlignItems() {
                 </div>
             </div>
 
-
-
             <div className="nextTopic1">
-                <Link className="next" to={"/alignContent"}>next topic</Link>
+                <Link className="next" to={"/justifyContent"}><i class="arrow left"></i>justify-content</Link>
+                <Link className="next" to={"/alignContent"}>align-content<i class="arrow right"></i></Link>
             </div>
         </>
     )

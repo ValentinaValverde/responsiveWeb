@@ -56,7 +56,7 @@ export default function AlignContent() {
 
 
             <div className="nextTopic1">
-                <Link className="next" to={"/alignItems"}>previous topic</Link>
+                <Link className="next" to={"/alignItems"}><i class="arrow left"></i>align-items</Link>
             </div>
         </>
     )
