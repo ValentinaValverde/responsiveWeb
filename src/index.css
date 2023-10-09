@@ -34,6 +34,7 @@ h2 {
 h3 {
     font-family: 'Pixelify Sans', cursive;
     text-align: center;
+    margin-top: 50px;
 }
 
 .navBar {
@@ -254,7 +255,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 
     >.rowP {
         background-color: #5465ff;
@@ -273,6 +274,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     >.columnP {
         background-color: #5465ff;
@@ -637,4 +639,9 @@ footer {
 .tryingHard{
     display: flex;
     justify-content: center;
+}
+
+.edit{
+    width: 300px;
+    max-width: 100%;
 }
